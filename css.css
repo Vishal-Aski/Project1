@@ -1,0 +1,89 @@
+/* Basic page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login container */
+.login-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #888;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -15px;
+    font-size: 12px;
+    color: #6e8efb;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #5a7de1;
+}
+
+/* Message */
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.message a {
+    color: #6e8efb;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
